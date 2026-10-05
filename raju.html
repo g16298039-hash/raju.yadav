@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday 🎂</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff6b81, #845ec2);
+            color: white;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px 25px;
+            border-radius: 25px;
+            width: 85%;
+            max-width: 500px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 45px;
+            margin: 10px 0;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .cake {
+            font-size: 90px;
+            animation: bounce 1s infinite;
+        }
+
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #ff4f70;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px white;
+            }
+            to {
+                text-shadow: 0 0 25px yellow;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .balloon {
+            position: absolute;
+            font-size: 45px;
+            animation: float 6s linear infinite;
+        }
+
+        @keyframes float {
+            from {
+                bottom: -100px;
+            }
+
+            to {
+                bottom: 110%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="balloon" style="left:10%; animation-delay:1s;">🎈</div>
+    <div class="balloon" style="left:30%; animation-delay:3s;">🎈</div>
+    <div class="balloon" style="left:70%; animation-delay:2s;">🎈</div>
+    <div class="balloon" style="left:90%; animation-delay:4s;">🎈</div>
+
+    <div class="card">
+
+        <div class="cake">🎂</div>
+
+        <h1>🎉 Happy Birthday 🎉</h1>
+
+        <h2>Dear Raju ❤️</h2>
+
+        <p>
+            Wishing you a very Happy Birthday! 🥳
+        </p>
+
+        <p>
+            May your day be filled with happiness,
+            love and beautiful memories. 💖
+        </p>
+
+        <button onclick="showMessage()">
+            🎁 Click Here
+        </button>
+
+        <div id="message">
+            🎊 Have an amazing birthday! 🎊<br>
+            ❤️ Stay Happy & Keep Smiling ❤️
+        </div>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
+</body>
+</html>
